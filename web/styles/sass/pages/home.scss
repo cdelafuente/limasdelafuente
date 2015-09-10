@@ -53,7 +53,7 @@ body {
           }
 
           &:hover {
-            & > a:after {
+            & > .sub-menu:before {
               content: "";
               display: inline-block;
               width: 0;
@@ -62,7 +62,7 @@ body {
               border-left: 6px solid transparent;
               border-right: 6px solid transparent;
               position: absolute;
-              bottom: 0;
+              top: -10px;
               left: 50%;
               margin-left: -5px;
             }
@@ -73,12 +73,13 @@ body {
               position: absolute;
               top: 53px;;
               left: 50%;
-              margin-left: -3em;
+              margin-left: -3.5em;
 
               & > li {
                 background-color: #f8c4d3;
-                width: 6em;
+                width: 7em;
                 text-align: center;
+                padding: 5px 0;
               }
 
               & > li:not(:last-child) {
