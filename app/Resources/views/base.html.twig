@@ -5,7 +5,7 @@
     <title>De la Fuente | {% block title %}{% endblock %}</title>
     {% block stylesheets %}{% endblock %}
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" />
   </head>
   <body>
     <section id="content">
@@ -15,21 +15,31 @@
         </h1>
         <nav>
           <ul class="main-menu">
-            <li><a href="">Inicio</a></li>
+            <li><a href="{{ path('homepage') }}">Inicio</a></li>
             <li>
-              <a href="">Nosotros</a>
+              <a href="#">Nosotros</a>
               <ul class="sub-menu">
-                <li><a href="">Visi&#243;n</a></li>
-                <li><a href="">Misi&#243;n</a></li>
+                <li><a href="{{ path('vision') }}">Visi&#243;n</a></li>
+                <li><a href="{{ path('mission') }}">Misi&#243;n</a></li>
               </ul>
             </li>
-            <li><a href="">Productos</a></li>
-            <li><a href="">Contacto</a></li>
+            <li><a href="{{ path('products') }}">Productos</a></li>
+            <li><a href="{{ path('contact') }}">Contacto</a></li>
           </ul>
         </nav>
       </header>
-      {% block content %}
-      {% endblock %}
+      {% block content %}{% endblock %}
     </section>
+    <footer>
+      <p class="contact">
+        <strong>Tel&#233;fono:</strong> +52 55 5672-5801
+        <br />
+        <a href="mailto:contacto@limasdelafuente.com.mx">contacto@limasdelafuente.com.mx</a>
+      </p>
+      <p class="copyright">
+        <br />
+        {{"now"|date("Y")}} &#169; Limas de la Fuente. Todos los derechos reservados.
+      </p>
+    </footer>
   </body>
 </html>

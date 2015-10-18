@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Visi&#243;{% endblock %}
+
+{% block stylesheets %}
+  <link rel="stylesheet" href="{{ asset('styles/css/home.css') }}" />
+  <link rel="stylesheet" href="{{ asset('styles/css/about-us.css') }}" />
+{% endblock %}
+
+{% block content %}
+  <div class="about-us">
+    <ul class="products">
+      <li class="vision-01">
+        <img width="180" height="180" src="{{ asset('img/about_us/vision-01.png') }}" />
+      </li>
+      <li class="vision-02">
+        <img width="257" height="180" src="{{ asset('img/about_us/vision-02.png') }}" />
+      </li>
+      <li class="vision-03">
+        <img width="225" height="180" src="{{ asset('img/about_us/vision-03.png') }}" />
+      </li>
+    </ul>
+    <div class="content">
+      <h2>VISI&#211;N</h2>
+      <p>
+        Ser la empresa l&#237;der en la fabricaci&#243;n y distribuci&#243;n de productos para el cuidado de manos y pies. 
+      </p>
+    </div>
+    <ul class="products">
+      <li class="vision-04">
+        <img width="" height="200" src="{{ asset('img/about_us/vision-04.png') }}" />
+      </li>
+      <li class="vision-05">
+        <img width="" height="180" src="{{ asset('img/about_us/vision-05.png') }}" />
+      </li>
+      <li class="vision-06">
+        <img width="" height="180" src="{{ asset('img/about_us/vision-06.png') }}" />
+      </li> 
+    </ul>
+  </div>
+{% endblock %}

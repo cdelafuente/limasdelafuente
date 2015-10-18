@@ -74,6 +74,7 @@ body {
               top: 53px;;
               left: 50%;
               margin-left: -3.5em;
+              z-index: 999;
 
               & > li {
                 background-color: #f8c4d3;
@@ -101,5 +102,69 @@ body {
         }
       }
     }
+  }
+}
+
+.banner {
+  width: 804px;
+  margin: 4rem 110px 0 110px;
+  float: left;
+}
+
+.logo-pink,
+.eco-wand {
+  float: left;
+}
+
+.limas-img {
+  display: block;
+  margin-bottom: -18px;
+}
+
+.products {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  float: left;
+  width: 804px;
+  margin: 4rem 110px 0 110px;
+
+  li {
+    border: 1px solid #fd7dac;
+    background-color: #fff;
+    text-align: center;
+    line-height: 0;
+
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+footer {
+  background-color: #999;
+  float: left;
+  width: 100%;
+  color: #fff;
+  margin-top: 4rem;
+  padding: 1rem 0;
+  font-size: 0.75rem;
+
+  .contact {
+    margin-left: 2rem;
+    float: left;
+
+    a:link,
+    a:visited,
+    a:hover,
+    a:active {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+
+  .copyright {
+    margin-right: 2rem;
+    float: right;
   }
 }

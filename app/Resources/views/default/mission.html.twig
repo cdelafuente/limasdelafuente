@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Misi&#243;n{% endblock %}
+
+{% block stylesheets %}
+  <link rel="stylesheet" type="text/css" href="{{ asset('styles/css/home.css') }}" />
+  <link rel="stylesheet" type="text/css" href="{{ asset('styles/css/about-us.css') }}" />
+{% endblock %}
+
+{% block content %}
+  <div class="about-us">
+    <ul class="products">
+      <li class="mission-01">
+        <img width="207" height="180" src="{{ asset('img/about_us/mission-01.png') }}" />
+      </li>
+      <li class="mission-02">
+        <img width="243" height="180" src="{{ asset('img/about_us/mission-02.png') }}" />
+      </li>
+      <li class="mission-03">
+        <img width="279" height="155" src="{{ asset('img/about_us/mission-03.png') }}" />
+      </li>
+    </ul>
+    <div class="content">
+      <h2>MISI&#211;N</h2>
+      <p>
+        Somos una empresa l&#237;der en la fabricaci&#243;n de productos para el cuidado e higiene de manos y pies. Nos regimos por los m&#225;s altos est&#225;ndares de calidad e innovaci&#243;n.
+      </p>
+    </div>
+    <ul class="products">
+      <li class="mission-04">
+        <img height="150" src="{{ asset('img/about_us/mission-04.png') }}">
+      </li>
+      <li class="mission-05">
+        <img height="180" src="{{ asset('img/about_us/mission-05.png') }}">
+      </li>
+      <li class="mission-06">
+        <img height="180" src="{{ asset('img/about_us/mission-06.png') }}">
+      </li>
+    </ul>
+  </div>
+{% endblock %}
