@@ -1,0 +1,149 @@
+/* Page background */
+html {
+  background: url('../../img/background.png');
+  background-color: #fff;
+  background-size: 88.5px;
+}
+
+/* Main body */
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  width: 1024px;
+  margin: 0 auto;
+}
+
+#content {
+  /* Page header */
+  header {
+    background-color: #fd7dac;
+    position: relative;
+
+    /* Main logo */
+    h1 {
+      margin: 0;
+  
+      #main-logo {
+        margin: 0 0 0 2rem;
+      }
+    }
+
+    /* Navigation bar */
+    nav {
+      position: absolute;
+      bottom: -11px;
+      right: 2rem;
+      font-size: 1.25rem;
+
+      /* Main menu items */
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        &.main-menu > li {
+          display: inline-block;
+          position: relative;
+          padding-bottom: 26px;
+
+          a:link,
+          a:visited,
+          a:hover,
+          a:active {
+            color: #fff;
+            text-decoration: none;
+          }
+
+          &:not(:last-child) {
+            margin-right: 1.5rem;
+          }
+
+          /* Sub-menus */
+          &:hover {
+            & > .sub-menu:before {
+              content: "";
+              display: inline-block;
+              width: 0;
+              height: 0;
+              border-top: 10px solid #f8c4d3;
+              border-left: 6px solid transparent;
+              border-right: 6px solid transparent;
+              position: absolute;
+              top: -10px;
+              left: 50%;
+              margin-left: -5px;
+            }
+
+            & .sub-menu {
+              display: block;
+              font-size: 1rem;
+              position: absolute;
+              top: 53px;;
+              left: 50%;
+              margin-left: -3.5em;
+              z-index: 999;
+
+              & > li {
+                background-color: #f8c4d3;
+                width: 7em;
+                text-align: center;
+                padding: 5px 0;
+              }
+
+              & > li:not(:last-child) {
+                border-bottom: 2px solid #fff;
+              }
+
+              a:link,
+              a:visited,
+              a:hover,
+              a:active {
+                color: #4d4c4c;
+              }
+            }
+          }
+
+          /* Hide sub-menus by default */
+          .sub-menu {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  /* Main footer */
+  footer {
+    background-color: #999;
+    float: left;
+    width: 100%;
+    color: #fff;
+    margin-top: 4rem;
+    padding: 1rem 0;
+    font-size: 0.75rem;
+ 
+    /* Contact information */ 
+    .contact {
+      list-style-type: none;
+      padding: 0;
+      margin-left: 2rem;
+      float: left;
+ 
+      /* Contact items */ 
+      a:link,
+      a:visited,
+      a:hover,
+      a:active {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  
+    /* Copyright information */
+    .copyright {
+      margin-right: 2rem;
+      float: right;
+    }
+  }
+}
+

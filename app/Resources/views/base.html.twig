@@ -29,17 +29,22 @@
         </nav>
       </header>
       {% block content %}{% endblock %}
+      <footer>
+        <ul class="contact">
+          <li>
+            <strong>Tel&#233;fono:</strong> +52 55 5672-5801
+          </li>
+          <li>
+            <a href="mailto:contacto@limasdelafuente.com.mx">
+              contacto@limasdelafuente.com.mx
+            </a>
+          </li>
+        </ul>
+        <p class="copyright">
+          <br />
+          {{"now"|date("Y")}} &#169; Limas de la Fuente. Todos los derechos reservados.
+        </p>
+      </footer>
     </section>
-    <footer>
-      <p class="contact">
-        <strong>Tel&#233;fono:</strong> +52 55 5672-5801
-        <br />
-        <a href="mailto:contacto@limasdelafuente.com.mx">contacto@limasdelafuente.com.mx</a>
-      </p>
-      <p class="copyright">
-        <br />
-        {{"now"|date("Y")}} &#169; Limas de la Fuente. Todos los derechos reservados.
-      </p>
-    </footer>
   </body>
 </html>
