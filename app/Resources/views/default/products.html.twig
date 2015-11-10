@@ -3,60 +3,25 @@
 {% block title %}Productos{% endblock %}
 
 {% block stylesheets %}
-  <link rel="stylesheet" type="text/css" href="{{ asset('styles/css/home.css') }}">
+  <link rel="stylesheet" href="{{ asset('styles/css/products.css') }}">
 {% endblock %}
 
 {% block content %}
-  <div class="products">
-    <p>
-      <a href=""></a>
-    </p>
-    <ul>
-      <li>
-        <img src="{{ asset('img/products/catalogo-01.png') }}">
-      </li>
-      <li>
-        <img src="{{ asset('img/products/catalogo-02.png') }}">
-      </li>
-      <li>
-        <img src="{{ asset('img/products/catalogo-03.png') }}">
-      </li>
-      <li>
-        <img src="{{ asset('img/products/catalogo-04.png') }}">
-      </li>
-      <li>
-        <img src="{{ asset('img/products/catalogo-05.png') }}">
-      </li>
-      <li>
-        <img src="{{ asset('img/products/catalogo-06.png') }}">
-      </li>
-      <li>
-        <img src="{{ asset('img/products/catalogo-07.png') }}">
-      </li>
-      <li>
-        <img src="{{ asset('img/products/catalogo-08.png') }}">
-      </li>
-      <li>
-        <img src="{{ asset('img/products/catalogo-09.png') }}">
-      </li>
-      <li>
-        <img src="{{ asset('img/products/catalogo-10.png') }}">
-      </li>
-      <li>
-        <img src="{{ asset('img/products/catalogo-11.png') }}">
-      </li>
-      <li>
-        <img src="{{ asset('img/products/catalogo-12.png') }}">
-      </li>
-      <li>
-        <img src="{{ asset('img/products/catalogo-13.png') }}">
-      </li>
-      <li>
-        <img src="{{ asset('img/products/catalogo-14.png') }}">
-      </li>
-      <li>
-        <img src="{{ asset('img/products/catalogo-15.png') }}">
-      </li>
-    </ul>
-  </div>  
+  <ul class="products">
+    <li class="item-01"><img width="300" height="210" src="{{ asset('img/products/catalog-01.png') }}"></li>
+    <li class="item-02"><img width="249" height="220" src="{{ asset('img/products/catalog-02.png') }}"></li>
+    <li class="item-03"><img width="288" height="230" src="{{ asset('img/products/catalog-03.png') }}"></li>
+    <li class="item-04"><img width="290" height="161" src="{{ asset('img/products/catalog-04.png') }}"></li>
+    <li class="item-05"><img width="240" height="240" src="{{ asset('img/products/catalog-05.png') }}"></li>
+    <li class="item-06"><img width="288" height="240" src="{{ asset('img/products/catalog-06.png') }}"></li>
+    <li class="item-07"><img width="276" height="240" src="{{ asset('img/products/catalog-07.png') }}"></li>
+    <li class="item-08"><img width="300" height="230" src="{{ asset('img/products/catalog-08.png') }}"></li>
+    <li class="item-09"><img width="300" height="167" src="{{ asset('img/products/catalog-09.png') }}"></li>
+    <li class="item-10"><img width="300" height="239" src="{{ asset('img/products/catalog-10.png') }}"></li>
+    <li class="item-11"><img width="300" height="167" src="{{ asset('img/products/catalog-11.png') }}"></li>
+    <li class="item-12"><img width="300" height="222" src="{{ asset('img/products/catalog-12.png') }}"></li>
+    <li class="item-13"><img width="240" height="240" src="{{ asset('img/products/catalog-13.png') }}"></li>
+    <li class="item-14"><img width="290" height="240" src="{{ asset('img/products/catalog-14.png') }}"></li>
+    <li class="item-15"><img width="231" height="240" src="{{ asset('img/products/catalog-15.png') }}"></li>
+  </ul>
 {% endblock %}

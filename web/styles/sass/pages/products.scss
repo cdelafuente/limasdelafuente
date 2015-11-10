@@ -1,0 +1,45 @@
+@import "../partials/main";
+
+.products {
+  list-style-type: none;
+  margin: 4rem 49px 0 49px;
+  padding: 0;
+  width: 926px;
+  float: left;
+
+  li {
+    width: 300px;
+    height: 240px;
+    float: left;
+    background-color: #fff;
+    border: 1px solid #808080;
+    position: relative;
+    margin-bottom: 10px;
+
+    &:nth-child(3n+2) {
+      margin: 0 10px;
+    }
+
+    img {
+      position: absolute;
+      top: 50%;
+      left: 0;
+    }
+  }
+
+  .item-01 img { margin-top: -110px; }
+  .item-02 img { left: 50%; margin-top: -110px; margin-left: -124.5px; }
+  .item-03 img { margin-top: -115px }
+  .item-04 img { left: 50%; margin-top: -80.5px; margin-left: -145px; }
+  .item-05 img { left: 50%; margin-top: -120px; margin-left: -120px; }
+  .item-06 img { left: 50%; margin-top: -120px; margin-left: -144px; }
+  .item-07 img { left: 50%; margin-top: -120px; margin-left: -138px; }
+  .item-08 img { margin-top: -115px; }
+  .item-09 img { margin-top: -83.5px; }
+  .item-10 img { margin-top: -119.5px; }
+  .item-11 img { margin-top: -83.5px; }
+  .item-12 img { margin-top: -111px; }
+  .item-13 img { left: 50%; margin-top: -120px; margin-left: -120px; }
+  .item-14 img { left: 50%; margin-top: -120px; margin-left: -145px; }
+  .item-15 img { left: 50%; margin-top: -120px; margin-left: -115.5px; }
+}
