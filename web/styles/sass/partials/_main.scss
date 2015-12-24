@@ -18,6 +18,7 @@ body {
   header {
     background-color: #fd7dac;
     position: relative;
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.3);
 
     /* Main logo */
     h1 {
@@ -121,6 +122,7 @@ body {
     margin-top: 4rem;
     padding: 1rem 0;
     font-size: 0.75rem;
+    box-shadow: 0 -1px 8px rgba(0,0,0,0.3);
  
     /* Contact information */ 
     .contact {
