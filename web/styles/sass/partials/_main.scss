@@ -55,6 +55,7 @@ body {
             text-decoration: none;
           }
 
+
           &:not(:last-child) {
             margin-right: 1.5rem;
           }
@@ -97,9 +98,12 @@ body {
 
               a:link,
               a:visited,
-              a:hover,
               a:active {
                 color: #4d4c4c;
+              }
+
+              a:hover {
+                color: #fff;
               }
             }
           }
