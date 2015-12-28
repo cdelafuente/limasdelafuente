@@ -27,9 +27,19 @@ module.exports = function (grunt) {
           ext: '.css'
         }]
       }
+    },
+    watch: {
+      css: {
+        files: 'web/styles/sass/**/*.scss',
+        tasks: ['sass:prod']
+      }
     }
   });
 
+  // Register sass task
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.registerTask('default', ['sass']);
+
+  // Register watch task
+  grunt.loadNpmTasks('grunt-contrib-watch');
 };
