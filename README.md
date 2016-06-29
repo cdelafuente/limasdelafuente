@@ -4,7 +4,7 @@ Website project for [limasdelafuente.com.mx](http://limasdelafuente.com.mx)
 
 ## Requirements
 
-PHP needs to be at least version 5.3.9. For PHP JSON and ctype support needs to be enabled. Also, `php.ini` needs to have the `date.timezone` setting.
+PHP needs to be at least version 5.3.9. For PHP, JSON and ctype support needs to be enabled. Also, `php.ini` needs to have the `date.timezone` setting.
 
 ## Installation
 
