@@ -1,16 +1,17 @@
 # Symfony ignores
+/web/bundles/
 /app/bootstrap.php.cache
 /app/cache/*
-!app/cache/.gitkeep
 /app/config/parameters.yml
 /app/logs/*
+!app/cache/.gitkeep
 !app/logs/.gitkeep
 /app/phpunit.xml
+/build/
+/vendor/
 /bin/
 /composer.phar
-/vendor/
-/web/bundles/
 
 # Project ignores
-node_modules/
 .sass-cache/
+node_modules/
