@@ -1,24 +1,48 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Inicio{% endblock %}
+{% block title %}Contacto{% endblock %}
 
 {% block stylesheets %}
-  <link rel="stylesheet" type="text/css" href="{{ asset('styles/css/home.css') }}">
+  <link rel="stylesheet" href="{{ asset('styles/css/home.css') }}" />
 {% endblock %}
 
 {% block content %}
-  <div class="banner">
-    <div class="logo-pink">
-      <img class="limas-img" src="{{ asset('img/home/limas.svg') }}" />
-      <img src="{{ asset('img/home/logo_pink.svg') }}" />
-    </div>
-    <div class="eco-wand">
-      <img width="385" src="{{ asset('img/home/home_01.png') }}" />
-    </div>
-  </div>
-  <ul class="products">
-    <li><img height="180" src="{{ asset('img/home/home_02.png') }}" /></li>
-    <li><img height="180" src="{{ asset('img/home/home_03.png') }}" /></li>
-    <li><img height="180" src="{{ asset('img/home/home_04.png') }}" /></li>
-  </ul>
+  <section>
+    <h2>
+      Contacto
+    </h2>
+    <form method="post" action="#">
+      <p>
+        <label>Compa&#241;&#237;a</label>
+        <input type="text" name="company-name" />
+      </p>
+      <p>
+        <label>Nombre</label>
+        <input type="text" name="full-name" />
+      </p>
+      <p>
+        <label>Direcci&#243;n</label>
+        <input type="text" name="address" />
+      </p>
+      <p>
+        <label>Tel&#233;fono</label>
+        <input type="text" name="phone-number" />
+      </p>
+      <p>
+        <label>Correo Electr&#243;nico</label>
+        <input type="text" name="email-address" />
+      </p>
+      <p>
+        <label>&#191;C&#243;mo se enter&#243; de nosotros?</label>
+        <input type="text" name="about" />
+      </p>
+      <p>
+        <label>Comentarios</label>
+        <textarea name="comments"></textarea> 
+      </p>
+      <p>
+        <input type="submit" value="Enviar" />
+      </p>
+    </form>
+  </section>
 {% endblock %}
