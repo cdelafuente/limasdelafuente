@@ -1,0 +1,24 @@
+@import "../partials/colors";
+@import "../partials/main";
+
+.contact {
+  width: 875px;
+  margin: 0 auto;
+
+  h2 {
+    background-color: $mercury;
+    color: $zambezi;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 15px 0;
+  }
+
+  form {
+    label {
+      display: inline-block;
+      background-color: $hawkes;
+      color: $zambezi;
+      width: 218.75px;
+    }
+  }
+}
