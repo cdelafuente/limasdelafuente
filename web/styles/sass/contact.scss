@@ -13,12 +13,34 @@
     padding: 15px 0;
   }
 
-  form {
+  .form {
     label {
       display: inline-block;
       background-color: $hawkes;
       color: $zambezi;
       width: 218.75px;
+      padding: 5px 10px;
+    }
+
+    textarea,
+    input[type=text] {
+      width: 291.66666667px;
+      border: none;
+      background-color: $chablis;
+      padding: 7px 10px;
+      vertical-align: top;
+      font-size: 16px;
+    }
+
+    input[type=text] {
+    }
+
+    textarea {
+      height: 64px;
+    }
+
+    &__send {
+      text-align: right;
     }
   }
 }
