@@ -42,5 +42,28 @@
     &__send {
       text-align: right;
     }
+
+    .button {
+      cursor: pointer;
+      display: inline-block;
+      border-radius: 21px;
+      padding: 5px;
+      background-color: $flamingo;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+
+      &:hover {
+        opacity: 0.9;
+      }
+
+      input {
+        border-radius: 16px;
+        color: $white;
+        padding: 5px 16px;
+        font-size: 16px;
+        border: 1px solid $white;
+        background-color: $hawkes;
+        cursor: inherit;
+      }
+    }
   }
 }
