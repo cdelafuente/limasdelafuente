@@ -14,22 +14,32 @@
   }
 
   .form {
+    width: 583.33333334px;
+
+    p {
+      float: left;
+    }
+
     label {
       display: inline-block;
       background-color: $hawkes;
       color: $zambezi;
-      width: 218.75px;
+      width: 193.75px;
       padding: 5px 10px;
+      float: left;
+      margin-right: 5px;
     }
 
     textarea,
     input[type=text] {
-      width: 291.66666667px;
+      width: 339.58333334px;
       border: none;
       background-color: $chablis;
       padding: 7px 10px;
       vertical-align: top;
       font-size: 16px;
+      float: left;
+      margin-left: 5px;
     }
 
     input[type=text] {
