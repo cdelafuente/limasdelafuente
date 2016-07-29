@@ -18,6 +18,12 @@
 
     p {
       float: left;
+      margin-bottom: 0;
+      width: 100%;
+    }
+
+    p:first-child {
+      margin-top: 0;
     }
 
     label {
