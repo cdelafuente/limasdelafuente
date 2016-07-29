@@ -14,6 +14,7 @@
   }
 
   .form {
+    float: left;
     width: 583.33333334px;
 
     p {
@@ -81,5 +82,15 @@
         cursor: inherit;
       }
     }
+  }
+
+  .banner {
+    width: 281.66666667px;
+    height: 444px;
+    float: left;
+    margin-left: 10px;
+    background: $mercury url('../../img/contact/eco-wand.png') no-repeat;
+    background-position: center;
+    background-size: 500px;
   }
 }
