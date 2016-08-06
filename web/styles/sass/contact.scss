@@ -94,3 +94,29 @@
     background-size: 500px;
   }
 }
+
+.company-info {
+  width: 875px;
+  margin: 0 auto;
+  clear: both;
+  padding-top: 2em; 
+
+  h2 {
+    color: $zambezi; 
+    background-color: $lightgray;
+    padding: 0.5em 1em;
+    margin-bottom: 0;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    background-color: $mercury;
+
+    li {
+      list-style-type: none;
+      padding: 0.5em 1em;
+    }
+  }
+}
+
